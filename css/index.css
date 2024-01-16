@@ -1,26 +1,37 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary-color:#10847e
 }
 .main-container{
     width: 70%;
     margin: auto;
 }
+/* nav start */
 .main-container > nav{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    font-size: 14px;
 }
 
 .main-container > nav > .main-container--left{
     display: flex;
     justify-content: space-between;
-    border: 1px solid green;
-    gap: 5px;
+    /* border: 1px solid green; */
+    gap: 30px;
+    padding: 5px;
+    align-items: center;
 }
-.main-container > nav > .main-container--left > img{
+.main-container > nav > .main-container--left > a > img{
     width: 148px;
     height: 40px;
 }
@@ -28,14 +39,138 @@
     border: 0.1px solid grey;
     height: 41px;
 }
+.main-container > nav > .main-container--left  .delivery-pin--code > :last-child > button{
+    background-color: transparent;
+    border: none;
+}
+.main-container > nav > .main-container--left  .delivery-pin--code > :last-child > button > i{
+    font-size: 1rem;
+}
+.main-container > nav > .main-container--left  .delivery-pin--code > :last-child > button > i:hover{
+    font-size: 1.2rem;
+}
+.main-container > nav > .main-container--left  .delivery-pin--code > :last-child > input{
+padding: 5px;
+border-radius: 4px;
+border: 0.1px solid grey;
+}
 
 .main-container > nav > .main-container--right{
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    padding: 5px;
+    align-items: center;
 }
 .main-container > nav > .main-container--right > div{
     display: flex;
     justify-content: space-between;
     gap: 8px;
 }
+
+.main-container > nav > .main-container--left > .delivery-pin--code >  div > img{
+    height: 20px;
+    
+    /* background-color: red; */
+}
+.main-container > nav > .main-container--right > :first-child{
+    background-color:#eef4ff
+}
+
+.main-container > nav > .main-container--right > div{
+    padding: 10px;
+    border-radius: 10px;
+}
+.main-container > nav > .main-container--right > div >a{
+    text-decoration: none;
+    color: black;
+}
+
+/* nav end */
+
+/* services start */
+.main-container > .services{
+    margin-top: 10px;
+    font-size: .9rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    padding: 10px;
+}
+.main-container > .services > ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+.main-container > .services > ul > li >a{
+    text-decoration: none;
+    color: #30363c;
+
+}
+.main-container > .services > ul > li >a:hover{
+    color:var(--primary-color)
+}
+
+/* .services end */
+
+
+/* looking-for-section start */
+
+
+
+
+.main-container > .looking-for-section > .search{
+    width: 60%;
+    margin: auto;
+}
+.main-container > .looking-for-section > div >:first-child{
+    /* border: 1px solid red; */
+     display: flex;
+    position: relative;
+    height: 60px;
+}
+.main-container > .looking-for-section > div >:first-child > div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+.main-container > .looking-for-section > div >:first-child h1{
+    font-weight: 200;
+}
+.main-container > .looking-for-section > div >:first-child a{
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+.main-container > .looking-for-section .search-container{
+    margin-top: 20px;
+}
+.main-container > .looking-for-section  .search-container > .search-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main-container > .looking-for-section  .search-container > .search-input > input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+}
+.main-container > .looking-for-section  .search-container > .search-input > button{
+    position: absolute;
+    right: 10px;
+    padding: 8px;
+    width: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+.main-container > .looking-for-section  .search-container > .search-input > button:hover{
+    background-color: #0a5552;
+}
+
+
+
+/* looking-for-section end */
