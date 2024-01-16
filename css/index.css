@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 70%;
+    margin: auto;
+}
+.main-container > nav{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main-container > nav > .main-container--left{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+    gap: 5px;
+}
+.main-container > nav > .main-container--left > img{
+    width: 148px;
+    height: 40px;
+}
+.main-container > nav > .main-container--left > .vertical-line{
+    border: 0.1px solid grey;
+    height: 41px;
+}
+
+.main-container > nav > .main-container--right{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.main-container > nav > .main-container--right > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
