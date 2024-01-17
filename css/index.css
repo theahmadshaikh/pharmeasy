@@ -298,3 +298,43 @@ border: 0.1px solid grey;
 } */
 
 /* slider end */
+
+
+
+/* test start */
+.labtest .tests{
+    grid-template-columns: repeat(10,1fr);
+    margin-top: 30px;
+    gap: 20px;
+}
+.labtest{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.labtest .tests img{
+    width: 200px;
+    height: 200px;
+}
+.labtest .tests div{
+    cursor: pointer;
+    padding: 10px;
+}
+.labtest > div {
+    position: relative;
+}
+.labtest > div > h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #30363c;
+}
+.labtest > div > img{
+width: 100px;
+position: absolute;
+/* left: 10px; */
+margin-left: 10px;
+}
+
+/* test end */
+
+
