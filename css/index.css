@@ -171,6 +171,21 @@ border: 0.1px solid grey;
     background-color: #0a5552;
 }
 
-
+.main-container > .looking-for-section  .search-container .suggestion-list--container{
+    max-height: 250px; 
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      width: 100%; 
+      display: none;
+      border-radius: 15px;
+}
+.main-container > .looking-for-section  .search-container .suggestion-list--container #suggestion-list{
+    list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.main-container > .looking-for-section  .search-container .suggestion-list--container #suggestion-list li{
+    padding: 10px 20px;
+}
 
 /* looking-for-section end */
