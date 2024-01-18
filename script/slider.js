@@ -3,13 +3,16 @@ function initSlider()
     const slideButtons = document.querySelectorAll(".first-slider .slider-wrapper .slide-button")
     const labSlideButtons = document.querySelectorAll(".labtest .slider-wrapper .slide-button")
     const categorySlideButtons = document.querySelectorAll(".category .slider-wrapper .slide-button")
+    const newLaunchesSlideButtons = document.querySelectorAll(".new-launches .slider-wrapper .slide-button")
     const imageList = document.querySelector(".slider-wrapper .image-list")
     const labeTestImageList = document.querySelector(".labtest .slider-wrapper .image-list")
     const categoryImageList = document.querySelector(".category .slider-wrapper .image-list")
+    const newLaunchesImageList = document.querySelector(".new-launches .slider-wrapper .image-list")
     
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
     const labTestMaxScrollLeft = labeTestImageList.scrollWidth - labeTestImageList.clientWidth;
     const categoryMaxScrollLeft = categoryImageList.scrollWidth - categoryImageList.clientWidth;
+    const newLaunchesMaxScrollLeft = newLaunchesImageList.scrollWidth - newLaunchesImageList.clientWidth;
     
     const sliderScrollbar = document.querySelector(".slider-container .slider-scrollbar");
     const scrollBarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
@@ -34,6 +37,13 @@ function initSlider()
             categoryImageList.scrollBy({left:scrollAmount,behavior:"smooth"})
         })
     })
+    newLaunchesSlideButtons.forEach(function(button){
+        button.addEventListener('click',function(){
+            const direction = button.id=="prev-slide"?-1:1;
+            const scrollAmount = newLaunchesImageList.clientWidth * direction;
+            newLaunchesImageList.scrollBy({left:scrollAmount,behavior:"smooth"})
+        })
+    })
     
     
     function handleSlideButtons(){
@@ -47,6 +57,10 @@ function initSlider()
     function handleCategorySlideButtons(){
         categorySlideButtons[0].style.display = categoryImageList.scrollLeft <=0 ? "none":"block";
         categorySlideButtons[1].style.display = categoryImageList.scrollLeft >=categoryMaxScrollLeft ?"none":"block"
+    }
+    function handlenewLauncheSlideButtons(){
+        newLaunchesSlideButtons[0].style.display = newLaunchesImageList.scrollLeft <=0 ? "none":"block";
+        newLaunchesSlideButtons[1].style.display = newLaunchesImageList.scrollLeft >=newLaunchesMaxScrollLeft ?"none":"block"
     }
     function updateScrollThumbPosition(){
         const scrollPosition = imageList.scrollLeft;
@@ -65,6 +79,9 @@ labeTestImageList.addEventListener('scroll',function(){
 })
 categoryImageList.addEventListener('scroll',function(){
     handleCategorySlideButtons();   
+})
+newLaunchesImageList.addEventListener('scroll',function(){
+    handlenewLauncheSlideButtons(); 
 })
 }
 window.addEventListener('load',initSlider)

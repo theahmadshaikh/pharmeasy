@@ -1,9 +1,48 @@
 let search_query = document.getElementById("search_query");
 let suggestionListContainer = document.querySelector(".suggestion-list--container")
 let suggestionList = document.querySelector("#suggestion-list")
+let newLaunchesProductContainer = document.querySelector(".new-launches .image-list")
+let newLaunchesProducts=[];
+fetch('./db/newlaunches.json')
+.then(response => response.json())
+.then(data => {
+  newLaunchesProducts = data;
+  displayNewLaunchesProducts(newLaunchesProducts);  
+
+})
+.catch(error => console.error('Error fetching data:', error));
 search_query.addEventListener('input', function() {
     showSuggestions(this.value);
   });
+  function displayNewLaunchesProducts(products) {
+    newLaunchesProductContainer.innerHTML="";
+    products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+
+        const productAnchor = document.createElement('a');
+        productAnchor.href = '#'; 
+
+        const productImage = document.createElement('img');
+        productImage.src = product.images[0]; 
+        productImage.alt = product.name;
+
+        const productName = document.createElement('h3');
+        const maxLength = 20; 
+        productName.textContent = product.name.length > maxLength
+            ? product.name.substring(0, maxLength) + '...'
+            : product.name;
+        productAnchor.appendChild(productImage);
+        productAnchor.appendChild(productName);
+
+        productDiv.appendChild(productAnchor);
+
+        newLaunchesProductContainer.appendChild(productDiv);
+    });
+}
+
+// Call the function to display new launches products
+// displayNewLaunchesProducts(products);
   search_query.addEventListener('focus', function() {
     showSuggestions(this.value);
   });
@@ -34,3 +73,4 @@ search_query.addEventListener('input', function() {
   function hideSuggestions() {
     suggestionListContainer.style.display = 'none';
   }
+

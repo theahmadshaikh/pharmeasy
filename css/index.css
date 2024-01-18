@@ -363,3 +363,207 @@ margin-left: 10px;
     height: 130px;
 }
 /* category end */
+
+/* new launches star */
+.new-launches .image-list{
+    grid-template-columns: repeat(10,1fr);
+    gap: 20px;
+}
+.new-launches .image-list div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    padding: 10px;
+}
+.new-launches .image-list div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.new-launches img{
+    width: 150px;
+    height: 130px;
+}
+.new-launches h3{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.new-launches a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+.new-launches h4{
+    color: #4f585e;
+    padding-top: 10px;
+    font-weight: 400;
+}
+.new-launches h2{
+    font-weight: 500;
+}
+/* new launches end */
+
+
+/* frequently booked lab test start */
+
+.frequently-booked-lab-test{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.frequently-booked-lab-test img{
+    width: 60px;
+}
+.frequently-booked-lab-test > div:nth-child(odd)
+{
+    background-color: #f1fafe;
+}
+.frequently-booked-lab-test > div:nth-child(even)
+{
+    background-color: #fdf7e8;
+}
+.frequently-booked-lab-test > div{
+    width: 25%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+.lab-cards > :first-child{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column ;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+.lab-cards > :last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.lab-cards > :last-child > div > :first-child{
+    text-decoration: line-through;
+}
+
+.lab-cards span{
+    background-color: #f47779;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    width: 90px;
+    padding: 10px;
+}
+.lab-cards h3{
+    font-weight: 400;
+}
+.labtest-section h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* frequently booked lab test end */
+
+/* choose us start */
+.choose-us{
+    background: #f8f9ff;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+}
+.choose-us h1,h4{
+    font-weight: 500;
+}
+.choose-us > div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.choose-us > div > div{
+    display: flex;
+    width: 20%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* choose us end */
+
+/* app download start */
+.app-download-section{
+    margin-top: 50px;
+    background: url("https://assets.pharmeasy.in/apothecary/images/downloadBanner.webp?dim=1440x0&q=100") center/cover no-repeat;
+    text-align: center;
+    padding: 100px;
+    background-color: #d7faf8;
+}
+.app-download-section h1{
+    font-weight: bold;
+}
+.app-download-section > div >h1,p{
+    margin-bottom: 20px;
+}
+.app-download-section a{
+    margin-right: 20px;
+}
+
+
+
+
+/* app download end */
+
+/* testimonial start */
+
+.testimonial{
+    margin-top: 50px;
+}
+.testimonial h1{
+    font-weight: 500;
+}
+.testimonial .testimonial-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+.testimonial .testimonial-card-wrapper> div>div{
+    background-color: #f2fff8;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #4f585e;
+}
+.testimonial .testimonial-card-wrapper> div h4{
+margin-bottom: 10px;
+}
+.testimonial .testimonial-card-wrapper> div p{
+    color: #4f585e;
+}
+/* testimonial end */
+/* info section start */
+
+.info-section{
+    margin-top: 50px;
+
+}
+
+.info-section span{
+    font-weight: 500;
+}
+.info-section p{
+    font-size: 14px;
+}
+.info-section h3{
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #30363c;
+}
+.info-section h4{
+    margin-bottom: 20px;
+}
+/* info section end */

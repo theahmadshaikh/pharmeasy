@@ -74,7 +74,10 @@ border: 0.1px solid grey;
     /* background-color: red; */
 }
 .main-container > nav > .main-container--right > :first-child{
-    background-color:#eef4ff
+    background-color:#eef4ff;
+    /* padding-bottom: 5px !important; */
+    /* height: 40px; */
+    /* margin-bottom: 20px; */
 }
 
 .main-container > nav > .main-container--right > div{
@@ -110,5 +113,8 @@ border: 0.1px solid grey;
     color:var(--primary-color)
 }
 
+
 /* .services end */
+
+
 
