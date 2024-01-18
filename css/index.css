@@ -14,8 +14,8 @@
     margin: auto;
 }
 /* nav start */
-.main-container > nav{
-    /* border: 1px solid red; */
+/* .main-container > nav{
+ 
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -26,7 +26,6 @@
 .main-container > nav > .main-container--left{
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid green; */
     gap: 30px;
     padding: 5px;
     align-items: center;
@@ -71,7 +70,7 @@ border: 0.1px solid grey;
 .main-container > nav > .main-container--left > .delivery-pin--code >  div > img{
     height: 20px;
     
-    /* background-color: red; */
+    
 }
 .main-container > nav > .main-container--right > :first-child{
     background-color:#eef4ff
@@ -84,12 +83,12 @@ border: 0.1px solid grey;
 .main-container > nav > .main-container--right > div >a{
     text-decoration: none;
     color: black;
-}
+} */
 
 /* nav end */
 
 /* services start */
-.main-container > .services{
+/* .main-container > .services{
     margin-top: 10px;
     font-size: .9rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -108,7 +107,7 @@ border: 0.1px solid grey;
 }
 .main-container > .services > ul > li >a:hover{
     color:var(--primary-color)
-}
+} */
 
 /* .services end */
 
@@ -338,3 +337,29 @@ margin-left: 10px;
 /* test end */
 
 
+/* category start */
+.category .image-list{
+    grid-template-columns: repeat(10,1fr);
+    gap: 20px;
+}
+.category .image-list div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    padding: 10px;
+}
+.category .image-list div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.category h4{
+    color: black;
+    margin-top: 10px;
+    font-size: 16px;
+    /* background-color: red; */
+    
+
+}
+.category img{
+    width: 150px;
+    height: 130px;
+}
+/* category end */
