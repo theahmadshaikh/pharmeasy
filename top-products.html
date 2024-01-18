@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Top Products Online</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/topproducts.css">
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <div class="main-container--left">
+               <a href="./index.html"><img src="./assest/logo.svg" alt=""></a>
+                <div class="vertical-line"></div>
+                <div class="delivery-pin--code">
+                    <div>
+                    <img src="./assest/ic_express delivery.svg" alt="">
+                    <span>Express delivery to</span>
+                </div>
+                <div>
+                    <input type="number" name="delivery_pin" id="delivery_pin" placeholder="Enter Pincode">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="main-container--right">
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                   <a href="#"> <p>Download App</p> </a>
+                </div>
+                <div>
+                    <i class="fa fa-user"></i>
+                   <a href="#"> <p>Hello,<span>Login</span></p></a>
+                </div>
+                <div>
+                    <i  class="fa fa-tag"></i>
+                    <a href="#"><p>Offers</p></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                   <a href="#"> <p>Cart</p></a>
+                </div>
+            </div>
+        
+        </nav>
+        <!-- nav end -->
+        <div class="services">
+            <ul>
+                <li><a href="#">Medicine</a></li>
+                <li><a href="#">Lab Tests</a></li>
+                <li><a href="#">Health Care</a></li>
+                <li><a href="#">Health Blogs</a></li>
+                <li><a href="#">PLUS</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Value Store</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h1>Filter</h1>
+            <h1>Top Products</h1>
+            <div>
+                <span>Sort By:</span>
+                <select name="sort" id="sort">
+                    <option value="lowtohigh">Price low to high</option>
+                    <option value="hightolow">Price high to low</option>
+                    <option value="discount">discount</option>
+                </select>
+            </div>
+        </div>
+        <section>
+            <div class="left">
+                <div class="category">
+                    <h3>Category</h1>
+                        <div>
+                        <label for="category">Top Products</label>
+                   <input type="radio" name="category" id="category" checked>
+                </div>
+                </div>
+                <div class="sub-category">
+                    <h3>Sub category</h3>
+                    <div>
+                        <div>
+                        <label for="sub-category">Diabetic Care</label>
+                        <input type="radio" name="sub-category" id="diabetic" value="diabetic">
+                    </div>
+                    <div>
+                        <label for="sub-category">Vitamin</label>
+                        <input type="radio" name="sub-category" id="Vitamin" value="vitamin">
+                    </div>
+                    <div>
+                        <label for="sub-category">Feet Problem</label>
+                        <input type="radio" name="sub-category" id="feetproblem" value="feetproblem">
+                    </div>
+                    <div>
+                        <label for="sub-category">Ortho Care</label>
+                        <input type="radio" name="sub-category" id="orthocare" value="ortho">
+                    </div>
+                    <div>
+                        <label for="sub-category">Skin & Hair Care</label>
+                        <input type="radio" name="sub-category" id="skinandhaircare" value="skinandhaircare">
+                    </div>
+                    </div>
+                </div>
+                <div class="brand">
+                    <h3>Brand</h3>
+                    <div>
+                        <div class="checkbox-container">
+                            <label for="liveeasy">LiveEasy</label>
+                            <input type="checkbox" id="liveeasy" name="brand" value="liveeasy">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="pharmeasy">PharmEasy</label>
+                            <input type="checkbox" id="pharmeasy" name="brand" value="pharmeasy">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="everherb">EverHerb</label>
+                            <input type="checkbox" id="everherb" name="brand" value="everherb">
+                          </div>                 
+                    </div>             
+                </div>
+                <div class="price">
+                    <h3>Price</h3>
+                    <div>
+                        <div class="checkbox-container">
+                            <label for="below99">Below 99</label>
+                            <input type="checkbox" id="below99" name="price" value="below99">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="100-199">100 - 199</label>
+                            <input type="checkbox" id="100-199" name="price" value="100-199">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="200-299">200 - 299</label>
+                            <input type="checkbox" id="200-299" name="price" value="200-299">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="300-399">300 - 399</label>
+                            <input type="checkbox" id="300-399" name="price" value="300-399">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="400-499">400 - 499</label>
+                            <input type="checkbox" id="400-499" name="price" value="400-499">
+                          </div>
+                      
+                          <div class="checkbox-container">
+                            <label for="above500">Above 500</label>
+                            <input type="checkbox" id="above500" name="price" value="above500">
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                <div>
+                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1698385993.jpg" alt="">
+                    <p>MRP <span>₹399.00</span> <span>50% OFF</span></p>
+                    <p>₹199.50</p>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="./js/top-products.js"></script>

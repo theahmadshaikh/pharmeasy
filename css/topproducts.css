@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary-color:#10847e
+}
+.main-container{
+    width: 70%;
+    margin: auto;
+}
+.info{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.info h1{
+    font-size: 24px;
+    color: #4f585e;
+}
+.info select{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+section .left{
+    width: 25%;
+}
+section .right{
+    width: 70%;
+}
+section > .left > div{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+section > .left  h3{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+section > .left > .category > div{
+    display: flex;
+    justify-content: space-between;
+}
+section > .left > .sub-category{
+    margin-top: 20px;
+}
+section > .left > .sub-category > div >div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+section > .left > .brand{
+    margin-top: 20px;
+}
+section > .left > .price{
+    margin-top: 20px;
+}
+section > .left > .brand > div >div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+section > .left > .price > div >div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+section > .left  input[type="radio"]{
+    transform: scale(1.5);
+}
+section > .left  input[type="checkbox"]{
+    transform: scale(1.5);
+}
+input[type="radio"]:checked {
+    color: red;
+}
+section > .right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+section > .right > div{
+    text-align: center;
+}
+section > .right > div > p > :first-child{
+    text-decoration: line-through;
+}
+section > .right img{
+    width: 200px;
+    height: 170px;
+    
+}
