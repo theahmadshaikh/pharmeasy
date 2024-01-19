@@ -1,0 +1,164 @@
+.medicine-detail-container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.medicine-detail-left-container .large-image-container{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.medicine-detail-left-container .large-image-container > img{
+    width: 100%;
+    height: 100%;
+}
+.medicine-detail-left-container .thumbnails{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.medicine-detail-left-container .thumbnail{
+    width: 100px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+.medicine-detail-left-container{
+    width: 50%;
+}
+.medicine-detail-left-container .detail-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.medicine-detail-left-container .detail-container .product-details > h1{
+    font-size: 20px;
+    color: #4f585e;
+    padding-bottom: 10px;
+}
+
+.medicine-detail-left-container .detail-container .product-details > .brand-name{
+    color: #8897a2;
+    font-size: 12px;
+    padding-bottom: 10px;
+
+}
+.medicine-detail-left-container .detail-container .product-details > .price{
+    font-size: 20px;
+    color: #4f585e;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.medicine-detail-left-container .detail-container .product-details  #add-to-cart{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #10847e;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    
+}
+.medicine-detail-left-container .description-container{
+    margin-top: 40px;
+}
+.medicine-detail-left-container .description-container > h3{
+    font-size: 18px;
+    color: #4f585e;
+    padding-bottom:10px ;
+}
+.medicine-detail-left-container .description-container > p{
+    font-size: 14px;
+    color: #4f585e;
+    padding-bottom:10px ;
+}
+#quantity-select{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    /* background-color: #10847e; */
+    /* color: #fff; */
+    border-radius: 6px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #ccc;
+       
+}
+.medicine-detail-right-container{
+    margin-top: 50px;
+    
+}
+.quick-links{
+    margin-top: 20px;
+}
+.quick-links > h3{
+    padding-bottom: 10px;
+    font-size: 15px;
+    color:#4f585e
+}
+.quick-links >div{
+    padding: 5px;
+}
+.quick-links >div > ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.quick-links >div > ul a{
+    text-decoration: none;
+    color: #10847e;
+    font-size: 14px;
+}
+
+.medicine-detail-right-container .offers{
+    margin-top: 20px;
+    
+}
+.medicine-detail-right-container .offers > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.medicine-detail-right-container p{
+    font-size: 16px;
+    color: #4f585e;
+    padding-bottom: 15px;
+}
+.medicine-detail-right-container .offers > div img{
+    width: 40px;
+}
+.medicine-detail-right-container .offers > div a{
+    text-decoration: none;
+    color: #10847e;
+
+}
+.medicine-detail-right-container .offers > .offer > :last-child{
+    color: #10847e;
+}
+.view-cart{
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #10847e;
+    color: #fff;
+    outline: none;
+    border: 0.1px solid #ccc;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.view-cart:disabled{
+    background-color: #8897a2;
+}

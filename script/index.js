@@ -1,4 +1,5 @@
 let search_query = document.getElementById("search_query");
+let searchButton =  document.querySelector('.search #search-button');
 let suggestionListContainer = document.querySelector(".suggestion-list--container")
 let suggestionList = document.querySelector("#suggestion-list")
 let newLaunchesProductContainer = document.querySelector(".new-launches .image-list")
@@ -74,3 +75,9 @@ search_query.addEventListener('input', function() {
     suggestionListContainer.style.display = 'none';
   }
 
+ 
+
+searchButton.addEventListener('click',function(){
+  localStorage.setItem("searchQuery",search_query.value);
+  location.href = "./medicine_detail.html"
+})

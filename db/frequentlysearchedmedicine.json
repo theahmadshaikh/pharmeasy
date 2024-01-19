@@ -1,0 +1,37 @@
+[
+    {
+        "name":"Ecosprin 75mg Strip Of 14 Tablets",
+        "brand":"By USV PVT LTD",
+        "price":4.96,
+        "images":["https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-1-1647434835.jpg?dim=320x320&dpr=1&q=100","https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-2-1647434829.jpg","https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-3-1647434825.jpg"],
+        "description":"Ecosprin 75 tablet is an antiplatelet medicine. It is used to prevent the risk of heart attacks, stroke and angina. It is also used in patients who have had angioplasty. Blood clots can limit or block the passage of blood to essential organs, resulting in a heart attack or stroke."
+    },
+    {
+        "name":"Dolo 650mg Strip Of 15 Tablets",
+        "brand":"By MICRO LABS",
+        "price":28.90,
+        "images":["https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100","https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-3-1653986087.jpg","https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-7-1653986144.jpg"],
+        "description":"Dolo 650 tablet contains an active ingredient called paracetamol, which works by blocking the formation of certain chemicals that cause pain and fever in the body. This medicine can be used to treat various conditions such as headache, backache, migraine, toothache, body pain, and even fever associated with diseases like typhoid or the common cold."
+    },
+    {
+        "name":"Pan 40mg Strip Of 15 Tablets",
+        "brand":"By ALKEM LABORATORIES LTD",
+        "price":141.90,
+        "images":["https://cdn01.pharmeasy.in/dam/products/I00306/pan-40mg-strip-of-15-tablets-2-1641531068.jpg?dim=320x320&dpr=1&q=100","https://cdn01.pharmeasy.in/dam/products/I00306/pan-40mg-strip-of-15-tablets-7-1641531070.jpg"],
+        "description":"Pan 40 tablet is a medication that reduces the level of acid in the stomach. It is used to treat stomach ulcers, gastroesophageal reflux disease (GERD), and other conditions related to acidity. GERD is a condition that occurs when acid reflux happens frequently, causing a burning pain or discomfort in the chest. The active ingredient in Pan 40 tablets is pantoprazole, which helps to reduce the production of stomach acid. For the best results, it is recommended to take this tablet on an empty stomach."
+    },
+    {
+        "name":"Pharmeasy Multivitamin Multimineral - Immunity Booster - Complete Nutrition - Bottle Of 60",
+        "brand":"By PHARMEASY Store",
+        "price":384.45,
+        "images":["https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1698386136.jpg?dim=700x0&dpr=1&q=100","https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-6.1-1698386148.jpg","https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-6.2-1698386188.jpg"],
+        "description":""
+    },
+    {
+        "name":"Pharmeasy Calcium Magnesium Vitamin D3 & Zinc - Bones & Dental Health - Bottle 60",
+        "brand":"By PHARMEASY Store",
+        "price":274.45,
+        "images":["https://cdn01.pharmeasy.in/dam/products_otc/G67452/pharmeasy-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-2-1672137118.jpg?dim=700x0&dpr=1&q=100","https://cdn01.pharmeasy.in/dam/products_otc/G67452/pharmeasy-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-6.1-1671743191.jpg"]
+    }
+
+]
