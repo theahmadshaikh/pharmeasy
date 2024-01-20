@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;   
+}
+header  div{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+header > div > div p {
+    font-size: 16px;
+}
+header > div > div img{
+    width: 20px;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.container h2{
+    color: #30363c;
+    font-size: 18px;
+}
+.payment-options img{
+    width: 30px;
+    display: inline-block;
+}
+.payment-options{
+    width: 60%;
+}
+.upi,.pay-later{
+    margin-top: 30px;
+    border: 0.5px solid #ccc;
+    padding: 30px;
+    border-radius: 6px;
+
+}
+.upi > div{
+    display: flex;
+    gap: 20px;
+}
+.upi > h2{
+    font-size: 18px;
+    color: #30363c;
+    margin-bottom: 30px;
+}
+.upi > h4{
+    font-size: 14px;
+    color: #51585d;
+    margin-bottom: 20px;
+}
+.upi > div > input{
+    width: 40%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 48px;
+    border: 0.3px solid #ccc;
+    outline: none;
+    border-radius: 6px;
+    color: #30363c;
+}
+.upi > div > button{
+    padding: 12px 16px;
+    background-color: #10847e;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.pay-later > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pay-later > div > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pay-later  button{
+    padding: 16px 8px;
+    background-color: #10847e;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.linked-wallets  button{
+    padding: 16px 8px;
+    background-color: #10847e;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+input[type="radio"] {
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px; /* Set a fixed width */
+    height: 15px; /* Set a fixed height */
+    border-radius: 50%; /* Make it round */
+    border: 1px solid #ccc; /* Add a border */
+    outline: none; /* Remove default focus outline */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Styles for the checked state */
+input[type="radio"]:checked {
+    background-color: #10847e; /* Change background color when checked */
+}
+.linked-wallets > div > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+.linked-wallets > div > div >div{
+    display: flex;
+    gap: 10px;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+.payment-options > div > h2{
+    font-size: 18px;
+    color: #30363c;
+    margin-bottom: 30px;
+}
+
+.linked-wallets{
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    border-radius: 6px;
+    padding: 30px;
+    
+}
+.other-options{
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 30px;
+}
+.other-options > div{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.other-options > div > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.other-options p{
+    font-size: 16px;
+    color: #30363c;
+    font-weight: 700;
+    
+}
+.payment-options button{
+    cursor: pointer;
+}
+.sub-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bill-summary{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 400px;
+    padding: 30px;
+    width: 30%;
+}
+.bill-summary > div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.bill-summary p{
+    font-size: 14px;
+    color: #6e787e;
+}
+.amount-to-be-paid p{
+    color: black;
+    font-weight: 800;
+}
+.handling-charges{
+    border-bottom: 1px solid #ccc;
+}
+.continue-button:disabled{
+    background-color: grey;
+}

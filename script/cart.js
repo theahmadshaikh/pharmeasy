@@ -1,12 +1,14 @@
-const cartData = JSON.parse(localStorage.getItem('cart')) || [];
+let cartData = JSON.parse(localStorage.getItem('cart')) || [];
 console.log(cartData)
 // Get the container element
 const cartContainer = document.querySelector('.cart-item-container');
 document.querySelector('.cart-left-container > div >h2').innerText = `${cartData.length} item in your cart`;
-cartContainer.innerHTML="";
 
 // Loop through the cart data and create HTML structure
-cartData.forEach(item => {
+function displayData(data){
+    cartContainer.innerHTML="";
+    data.forEach(item => {
+    
     // Create cart item div
     const cartItem = document.createElement('div');
     cartItem.className = 'cart-item';
@@ -47,6 +49,9 @@ cartData.forEach(item => {
     deleteButton.src = 'https://assets.pharmeasy.in/web-assets/images/icDelete.svg';
     deleteButton.alt = 'Delete Item';
     deleteButton.className = 'delete-item-button';
+    deleteButton.addEventListener('click',function(){
+        handDeleteButton(item);
+    })
 
     const quantitySelect = document.createElement('select');
     quantitySelect.name = 'item-quantatiy';
@@ -70,8 +75,10 @@ cartData.forEach(item => {
 
     // Append cart item to the container
     cartContainer.appendChild(cartItem);
-    generateCartSummary(cartData)
+    
 });
+generateCartSummary(cartData);
+}
 function generateCartSummary(cartData) {
     // Container for the cart summary
     let summaryContainer = document.querySelector('.cart-right-container');
@@ -93,6 +100,13 @@ function generateCartSummary(cartData) {
     let cartTotalText = document.createElement('p');
     cartTotalText.innerHTML = 'Cart total: <span>₹' + getTotalCartValue(cartData).toFixed(2) + '</span>';
     let continueButton = document.createElement('button');
+    if(cartData.length==0)
+        continueButton.disabled=true;
+    else
+        continueButton.disabled=false;
+    continueButton.addEventListener('click',function(){
+        location.href="./payment.html";
+    })
     continueButton.className = 'continue-button';
     continueButton.textContent = 'Continue';
     let applyCouponSection = document.createElement('div');
@@ -133,7 +147,7 @@ function generateCartSummary(cartData) {
     let amountToBePaidHeading = document.createElement('p');
     amountToBePaidHeading.textContent = 'Amount to be paid';
     let amountValue = document.createElement('p');
-    amountValue.textContent = '₹' + getTotalCartValue(cartData).toFixed(2);
+    amountValue.textContent = '₹' + (getTotalCartValue(cartData)+getBillItemValue('Delivery charges')).toFixed(2);
     amountToBePaid.appendChild(amountToBePaidHeading);
     amountToBePaid.appendChild(amountValue);
     billSummarySection.appendChild(amountToBePaid)
@@ -146,6 +160,8 @@ function generateCartSummary(cartData) {
 
     // Append the summary container to the body
     document.querySelector('.cart-main-container').appendChild(summaryContainer)
+    let obj = {cartValue:getTotalCartValue(cartData),deliveryCharges:80,handlingCharges:3.00};
+    localStorage.setItem("totalBill",JSON.stringify(obj));
 }
 
 // Function to calculate the total cart value
@@ -159,7 +175,7 @@ function getBillItemValue(itemName, cartData) {
         case 'Total MRP':
             return getTotalCartValue(cartData);
         case 'Delivery charges':
-            return 80; // Replace with your delivery charges logic
+            return 80; 
         case 'Cart Value':
             return getTotalCartValue(cartData);
         default:
@@ -167,7 +183,13 @@ function getBillItemValue(itemName, cartData) {
     }
 }
 
-
+function handDeleteButton(dataToBeDeleted)
+{
+    cartData = cartData.filter((data)=> data.name!= dataToBeDeleted.name);
+    localStorage.setItem("cart",JSON.stringify(cartData));
+    displayData(cartData);
+}
+displayData(cartData)
 // Retrieve cart data from local storage
 
 // Call the function to generate cart summary
