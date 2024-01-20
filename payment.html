@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/payment.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
+            <div>
+                <img src="./assest/paymentlogo.svg" alt="">
+                <p>100% Secure Payments</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Payment Options</h2>
+        <div class="sub-container">
+        <div class="payment-options">
+            <div class="upi">
+                <h2>UPI</h2>
+                <h4>Add New UPI ID</h4>
+                <div>
+                    <input placeholder="Enter your UPI ID"  type="text" name="upi-input-box" id="upi-input-box">
+                    <button class="upi-pay-button">Place Order & Pay 387.5</button>
+                </div>
+            </div>
+            
+            <div class="pay-later">
+                <h2>Pay Later</h2>
+                <div>
+                    <div>
+                    <img src="https://cdn.pharmeasy.in/payments/simpl2.png?dim=32x32&q=75" alt="">
+                    <h3>Simpl</h3>
+                </div>
+                    <input type="radio" name="pay-later" id="pay-later" value="pay-later">
+                </div>
+                <button class="pay-later-button">Place Order & Pay 387.5 </button>
+            </div>
+
+
+            <div class="linked-wallets">
+                
+                <div>
+                    <h2>Linked Wallets</h2>
+                    <div>
+                        <div>
+                    <img src="https://cdn.pharmeasy.in/payments/Paytm-bank-logo.png" alt="">
+                    <h3>Paytm Payments Bank Wallet</h3>
+                </div>
+                    <input type="radio" name="linked-wallets" id="paytm">
+                </div>
+                <button class="paytm-button">Place Order & Pay 387.5</button>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                    <img src="https://cdn.pharmeasy.in/payments/Amazon_Pay_23.png" alt="">
+                    <h3>Amazon Pay</h3>
+                </div>
+                    <input type="radio" name="linked-wallets" id="amazon">
+                </div>
+                <button class="amazon-button">Place Order & Pay 387.5</button>
+                </div>
+            </div>
+
+            <div class="other-options">
+                <h2>Other Options</h2>
+                <div>
+                    <div>
+                    <img src="https://cdn.pharmeasy.in/payments/card.png" alt="">
+                    <p>Credit/Debit Card</p>
+                    </div>
+                    <p>&gt;</p>
+                </div>
+
+                <div>
+                    <div>
+                    <img src="https://cdn.pharmeasy.in/payments/wallet.png" alt="">
+                    <p>Wallets</p>
+                </div>
+                    <p>&gt;</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="">
+                    <p>Net Banking</p>
+                </div>
+                    <p>&gt;</p>
+                </div>
+                <div>
+                    <div>
+                    <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="">
+                    <p>Cash on Delivery</p>
+                </div>
+                    <p>&gt;</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="bill-summary">
+            <h2>Bill Summary</h2>
+            <div class="cart-value">
+                <p>Cart Value</p>
+                <p id="cart-value">₹384.45</p>
+            </div>
+            <div class="delivery-charges">
+                <p>Delivery charges</p>
+                <p id="delivery-charge">₹80</p>
+            </div>
+            <div class="handling-charges">
+                <p>Handling Charges</p>
+                <p id="handling-charges">₹3.00</p>
+            </div>
+            <div class="amount-to-be-paid">
+                <p>Amount to be paid</p>
+                <p id="amount-to-be-paid">₹387.5</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script src="./script/payment.js"></script>

@@ -2,6 +2,9 @@ let thumbnails = document.querySelectorAll('.medicine-detail-container .medicine
 let cart=JSON.parse(localStorage.getItem("cart")) || [];
 let selectedItem ={};
 let viewCart = document.querySelector('.view-cart');
+viewCart.addEventListener('click',function(){
+    location.href="./cart.html"
+})
 if(cart.length)
     viewCart.disabled = false;
 // Add click event listener to each thumbnail
@@ -55,9 +58,10 @@ function changeImage(newImageSrc) {
                     cart[index].quantity = this.value;
                 }
                 localStorage.setItem("cart",JSON.stringify(cart));
-                if(cart.length)
+                if(cart.length){
                     viewCart.disabled = false;
                 document.querySelector('.medicine-detail-right-container > p').innerText=`${cart.length} item in cart`;
+                }
             })
         }
 
