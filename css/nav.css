@@ -21,6 +21,8 @@
     margin-top: 10px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     font-size: 14px;
+    
+    
 }
 
 .main-container > nav > .main-container--left{
@@ -97,6 +99,7 @@ border: 0.1px solid grey;
     font-size: .9rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     padding: 10px;
+    
 }
 .main-container > .services > ul{
     display: flex;
