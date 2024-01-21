@@ -1,0 +1,144 @@
+  
+.slidershow{
+    width: 700px;
+    height: 320px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.middle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+
+
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #16876e;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background:#16876e;
+    
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height:100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+#r6:checked ~ .s1{
+    margin-left: -100%;
+}
+#r7:checked ~ .s1{
+    margin-left: -120%;
+}
+#r8:checked ~ .s1{
+    margin-left: -140%;
+}
+#r9:checked ~ .s1{
+    margin-left: -160%;
+}
+#r10:checked ~ .s1{
+    margin-left: -180%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    width: 80%;
+    gap: 10px;
+    margin-top: 30%;
+    cursor: pointer;
+
+}
+
+.image{
+    width:100px;
+}
+
+.para1{
+    display: flex;
+
+}
+.container>.box{
+    box-shadow: 5px 5px 5px 5px #4f585e;  
+    border-radius: 4%;
+    
+}
+
+
+.box{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    
+    
+}
+
+.para2{
+color: #16876e;
+}
+
+
+.container>div:hover{
+    outline: 4px solid  #16876e
+    ;
+}
+
+.section{
+    width: 80%;
+    margin: auto;
+    color: #4f585e;
+}
+
+
