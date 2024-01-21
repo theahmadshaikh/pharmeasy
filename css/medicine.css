@@ -1,0 +1,108 @@
+.medicine-container{
+    width: 70%;
+    margin: auto;
+}
+.medicine-container h1{
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #4f585e;
+}
+.medicine-sub-container{
+    display: flex;
+    justify-content: space-between;
+}
+.medicine-sub-container .left{
+    background-color: #10847e;
+    color: #fff;
+    padding: 20px;
+    width: 60%;
+    border-radius: 6px;
+}
+.flex{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.medicine-sub-container .left > :first-child{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.medicine-sub-container .left > div p{
+    font-size: 12px;
+}
+.medicine-sub-container .left > h2{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.search-container{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.search-input{
+    /* border: 1px solid yellow; */
+    width: 100%;
+}
+.medicine-sub-container .left  input{
+   padding: 10px 15px;
+   width: 80%;
+   border-radius: 6px;
+   color: #4f585e;
+   outline: none;
+   border: none;
+}
+.search-input{
+    position: relative;
+
+
+}
+.search-input button{
+    position: absolute;
+    right: 20%;
+    top: -3px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+.medicine-sub-container .right > div > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #4f585e;
+    cursor: pointer;
+}
+
+
+
+
+.suggestion-list--container{
+    max-height: 250px; 
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      width: 80%; 
+      display: none;
+      border-radius: 15px;
+      z-index: 1;
+      background-color: #c9baba;
+      color: black;
+}
+
+
+.suggestion-list--container #suggestion-list{
+    list-style: none;
+      padding: 0;
+      margin: 0;
+}
+.suggestion-list--container #suggestion-list li{
+    padding: 10px 20px;
+}
