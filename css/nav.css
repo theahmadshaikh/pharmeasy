@@ -121,3 +121,81 @@ border: 0.1px solid grey;
 
 
 
+#drawer {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Start with the drawer off-screen */
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .drawer-content > div {
+    background-color: #10847e;
+    text-align: center;
+  }
+  .drawer-content > div > img{
+    width: 200px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .drawer-content form{
+    padding: 30px;
+  }
+  .drawer-content form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .drawer-content form > div label{
+    font-size: 16px;
+    color: #4f585e;
+  }
+  .drawer-content form > div input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+  }
+  .drawer-content form > div button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background-color: #10847e;
+    color: #fff;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    color: #fff;
+  }
+  
+  .otp-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .otp-div input{
+    width: 50px;
+    height: 50px;
+  }
