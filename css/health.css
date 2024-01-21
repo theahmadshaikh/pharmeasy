@@ -92,11 +92,12 @@ input[name="r"]{
 }
 
 .container{
+    padding-top: 100px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: auto;
     width: 80%;
-    gap: 10px;
+    gap: 30px;
     margin-top: 30%;
     cursor: pointer;
 
@@ -111,8 +112,8 @@ input[name="r"]{
 
 }
 .container>.box{
-    box-shadow: 5px 5px 5px 5px #4f585e;  
-    border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 6px;
     
 }
 
@@ -121,6 +122,8 @@ input[name="r"]{
     display: flex;
     text-align: center;
     flex-direction: row;
+    align-items: center;
+    gap: 10px;
     
     
 }
@@ -139,6 +142,18 @@ color: #16876e;
     width: 80%;
     margin: auto;
     color: #4f585e;
+    margin-top: 50px;
+}
+.section h2,p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.section p
+{
+    color: #4f585e;
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
