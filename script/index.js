@@ -81,3 +81,4 @@ searchButton.addEventListener('click',function(){
   localStorage.setItem("searchQuery",search_query.value);
   location.href = "./medicine_detail.html"
 })
+

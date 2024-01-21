@@ -104,11 +104,18 @@ function generateCartSummary(cartData) {
         continueButton.disabled=true;
     else
         continueButton.disabled=false;
+
     continueButton.addEventListener('click',function(){
+        if(localStorage.getItem("isAuth")=='true')
         location.href="./payment.html";
+        else
+        alert("Please login first")
     })
-    continueButton.className = 'continue-button';
+
+
+    continueButton.className = 'continue-button';``
     continueButton.textContent = 'Continue';
+    
     let applyCouponSection = document.createElement('div');
     let applyCouponImage = document.createElement('img');
     applyCouponImage.src = 'https://assets.pharmeasy.in/web-assets/images/cartCoupon.svg';

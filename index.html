@@ -34,9 +34,9 @@
                     <i class="fa-solid fa-mobile"></i>
                    <a href="#"> <p>Download App</p> </a>
                 </div>
-                <div>
+                <div class="login-link-div">
                     <i class="fa fa-user"></i>
-                   <a href="./login.html"> <p>Hello,<span>Login</span></p></a>
+                   <a href="#" id="login-link"> <p>Hello,<span>Login</span></p></a>
                 </div>
                 <div>
                     <i  class="fa fa-tag"></i>
@@ -61,6 +61,23 @@
                 <li><a href="#">Value Store</a></li>
             </ul>
         </div>
+        <div id="drawer" class="hidden">
+            <div class="drawer-content">
+                
+                <div>
+                    <button id="closeDrawerBtn" class="close-btn">X</button>
+              <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
+            </div>
+              <form id="loginForm">
+                <div>
+                <label for="mobile-number">Quick Login / Register</label>
+                <input name="mobile-number" id="mobile-number" type="number" placeholder="Enter Mobile Number">
+                <button id="otp-button">Send OTP</button>
+            </div>
+              </form>
+\
+            </div>
+          </div>
         <section class="looking-for-section">
             <div class="search">
                 <div>
@@ -572,3 +589,4 @@
 </html>
 <script src="/script/slider.js"></script>
 <script src="/script/index.js"></script>
+<script src="/script/login-drawer.js"></script>
