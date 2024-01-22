@@ -17,3 +17,23 @@ This is a clone of PharmEasy, India's highly trusted online pharmacy and medical
 * JS
 * JSON file as DB
 
+#Screenshots
+
+##Homepage
+![Screenshot (11)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/2c059811-6f19-41e4-9726-34eeec53112e)
+
+![Screenshot (12)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/959b37c1-b570-40a1-b32e-d053351334bc)
+
+![Screenshot (13)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/5c8a0b42-d7c5-41b6-ac58-bc9e2d0130b5)
+
+![Screenshot (14)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/b16f4544-659c-44b5-b692-9f096b5437ef)
+
+![Screenshot (15)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/352ee492-a64f-429b-9df8-d76a99546e91)
+
+![Screenshot (16)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/22fc8e83-47d5-4faa-a74d-1989739e8b6b)
+
+
+
+
+
+
