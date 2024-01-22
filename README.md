@@ -2,8 +2,6 @@
 This is a clone of PharmEasy, India's highly trusted online pharmacy and medical website. Operating as an e-commerce platform, it provides a wide range of pharmaceutical and healthcare products for individuals to purchase, including medicines and various healthcare-related equipment conveniently.
 
 # Functionalities:
-## My Unordered List
-
 * Login
 * Logout
 * Search Products
@@ -14,10 +12,8 @@ This is a clone of PharmEasy, India's highly trusted online pharmacy and medical
 * payment page
 
 # Tech Stack:
-## My Unordered List
-
-*HTML
-*CSS
-*JS
-*JSON file as DB
+* HTML
+* CSS
+* JS
+* JSON file as DB
 
