@@ -17,9 +17,9 @@ This is a clone of PharmEasy, India's highly trusted online pharmacy and medical
 * JS
 * JSON file as DB
 
-#Screenshots
+# Screenshots
 
-##Homepage
+## Homepage
 ![Screenshot (11)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/2c059811-6f19-41e4-9726-34eeec53112e)
 
 ![Screenshot (12)](https://github.com/theahmadshaikh/pharmeasy/assets/121341123/959b37c1-b570-40a1-b32e-d053351334bc)
